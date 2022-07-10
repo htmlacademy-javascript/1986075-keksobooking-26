@@ -7,7 +7,7 @@ function getRandomIntInclusive(min, max, degreeOfNumber) {
     const result = (Math.random() * (max - min + 1));
     return result.toFixed(degreeOfNumber);
   }else{
-    console.log('Число меньше 0');
+    print('Число меньше 0');
   }}
 // getRandomIntInclusive(0.6, 9.2, 4); // Проверка работоспособности функции
 
@@ -18,7 +18,7 @@ const comfortLevel = ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'co
 const photosOfRooms = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
 
 const author = {
-  avatar:'img/avatars/user' + 1 + '{01}.png'
+  avatar: 'img/avatars/user' + 04 + '.png'
 };
 
 const location = {
