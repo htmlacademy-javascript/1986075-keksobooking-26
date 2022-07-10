@@ -1,13 +1,40 @@
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
-function getRandomIntInclusive(min, max, numbers) {
+function getRandomIntInclusive(min, max, degreeOfNumber) {
   min = Math.ceil(min);
   max = Math.floor(max);
   if (min >= 0 && max >= 0) {
     const result = (Math.random() * (max - min + 1));
-    return result.toFixed(numbers);
+    return result.toFixed(degreeOfNumber);
   }else{
-    // console.log('Число меньше 0');
+    console.log('Число меньше 0');
   }}
+// getRandomIntInclusive(0.6, 9.2, 4); // Проверка работоспособности функции
+let nameOfTheBookingObject = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
+let registrationTime = ['12:00', '13:00', '14:00'];
+let departureTime = ['12:00', '13:00', '14:00'];
+let comfortLevel = ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'];
+let photosOfRooms = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
 
-getRandomIntInclusive(0.6, 9.2, 4);
+let author = {
+  avatar:'img/avatars/user' + 1 + '{01}.png',
+};
+
+let location = {
+  lat: getRandomIntInclusive(35.65000, 35.70000, 4),
+  lng: getRandomIntInclusive(139.70000, 139.80000, 4),
+};
+
+let offer = {
+  title: 'Прекрасное предложение об аренде жилья',
+  address: location,
+  price: getRandomIntInclusive(5000, 50000, 2),
+  type: nameOfTheBookingObject[-1],
+  rooms: getRandomIntInclusive(1, 50, 1),
+  guests: getRandomIntInclusive(1, 5, 0),
+  chekin: registrationTime[1],
+  chekout: departureTime[2],
+  features: comfortLevel[0],
+  description: 'Тип помещения',
+  photos: photosOfRooms[2],
+};
