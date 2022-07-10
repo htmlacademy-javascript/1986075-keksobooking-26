@@ -10,14 +10,15 @@ function getRandomIntInclusive(min, max, degreeOfNumber) {
     console.log('Число меньше 0');
   }}
 // getRandomIntInclusive(0.6, 9.2, 4); // Проверка работоспособности функции
-let nameOfTheBookingObject = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
-let registrationTime = ['12:00', '13:00', '14:00'];
-let departureTime = ['12:00', '13:00', '14:00'];
-let comfortLevel = ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'];
-let photosOfRooms = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
+
+const nameOfTheBookingObject = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
+const registrationTime = ['12:00', '13:00', '14:00'];
+const departureTime = ['12:00', '13:00', '14:00'];
+const comfortLevel = ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'];
+const photosOfRooms = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
 
 let author = {
-  avatar:'img/avatars/user' + 1 + '{01}.png',
+  avatar:'img/avatars/user' + 1 + '{01}.png'
 };
 
 let location = {
