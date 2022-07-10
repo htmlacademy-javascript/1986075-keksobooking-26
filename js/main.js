@@ -20,7 +20,7 @@ const photosOfRooms = ['https://assets.htmlacademy.ru/content/intensive/javascri
 
 
 const author = {
-  avatar: `{img/avatars/user} + ${1} + .png`
+  avatar: '{img/avatars/user}1.png'
 };
 
 
