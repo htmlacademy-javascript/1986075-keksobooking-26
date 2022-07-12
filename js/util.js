@@ -1,4 +1,4 @@
-export function getRandomIntInclusive(min, max, degreeOfNumber) {
+function getRandomIntInclusive(min, max, degreeOfNumber) {
   min = Math.ceil(min);
   max = Math.floor(max);
   if (min >= 0 && max >= 0) {
@@ -7,5 +7,6 @@ export function getRandomIntInclusive(min, max, degreeOfNumber) {
   }else{
     print('Число меньше 0');
   }}
+// getRandomIntInclusive(0.6, 9.2, 4); // Проверка работоспособности функции
 
-
+export {getRandomIntInclusive};
