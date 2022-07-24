@@ -38,11 +38,11 @@ const advertisement = {
   location: location,
 };
 
-let offerTitle = document.querySelector('.popup__title');
-let template = document.querySelector('#card');
-let title = template.content.querySelector('.popup__title');
-let popup = template.content.querySelector('.popup');
-let clonePopup = popup.cloneNode(true);
+const offerTitle = document.querySelector('.popup__title');
+const template = document.querySelector('#card');
+const title = template.content.querySelector('.popup__title');
+const popup = template.content.querySelector('.popup');
+const clonePopup = popup.cloneNode(true);
 
 const offerAddress = clonePopup.querySelector('.popup__text--address');
 offerAddress.textContent = advertisement.offer.address;
@@ -61,14 +61,11 @@ popupTextCapacity.textContent = `${advertisement.offer.rooms} комнаты д�
 const popupTextTime = clonePopup.querySelector('.popup__text--time');
 popupTextTime.textContent = `Заезд после ${advertisement.offer.checkin}, выезд до ${advertisement.offer.checkout}`;
 
-const popupFeatures = clonePopup.querySelector('.popup__features');
-// popupFeatures.textContent = `${advertisement.offer.features}`;
-// popupFeatures.classList.add('hidden');
 
 const popupFeaturesLi = clonePopup.querySelectorAll('.popup__features li');
 
-popupFeaturesLi.forEach(element => {
-  element.classList.add('hidden')
+popupFeaturesLi.forEach((element) => {
+  element.classList.add('hidden');
 });
 
 clonePopup.querySelector(`.popup__feature--${advertisement.offer.features}`).classList.remove('hidden');
