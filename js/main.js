@@ -49,23 +49,23 @@ offerAddress.textContent = advertisement.offer.address;
 clonePopup.querySelector('.popup__title').textContent = advertisement.offer.title;
 // document.body.appendChild(clonePopup);
 
-let offerPrice = clonePopup.querySelector('.popup__text--price');
+const offerPrice = clonePopup.querySelector('.popup__text--price');
 offerPrice.textContent = `${advertisement.offer.price} ₽/ночь`;
 
-let offertType = clonePopup.querySelector('.popup__type');
+const offertType = clonePopup.querySelector('.popup__type');
 offertType.textContent = advertisement.offer.type;
 
-let popupTextCapacity  = clonePopup.querySelector('.popup__text--capacity');
+const popupTextCapacity  = clonePopup.querySelector('.popup__text--capacity');
 popupTextCapacity.textContent = `${advertisement.offer.rooms} комнаты для ${advertisement.offer.guests} гостей`;
 
-let popupTextTime = clonePopup.querySelector('.popup__text--time');
+const popupTextTime = clonePopup.querySelector('.popup__text--time');
 popupTextTime.textContent = `Заезд после ${advertisement.offer.checkin}, выезд до ${advertisement.offer.checkout}`;
 
-let popupFeatures = clonePopup.querySelector('.popup__features');
+const popupFeatures = clonePopup.querySelector('.popup__features');
 // popupFeatures.textContent = `${advertisement.offer.features}`;
 // popupFeatures.classList.add('hidden');
 
-let popupFeaturesLi = clonePopup.querySelectorAll('.popup__features li');
+const popupFeaturesLi = clonePopup.querySelectorAll('.popup__features li');
 
 popupFeaturesLi.forEach(element => {
   element.classList.add('hidden')
@@ -73,15 +73,15 @@ popupFeaturesLi.forEach(element => {
 
 clonePopup.querySelector(`.popup__feature--${advertisement.offer.features}`).classList.remove('hidden');
 
-let popupDescription = clonePopup.querySelector('.popup__description');
+const popupDescription = clonePopup.querySelector('.popup__description');
 popupDescription.textContent = advertisement.offer.description;
 
-let popupPhoto = clonePopup.querySelector('.popup__photo');
+const popupPhoto = clonePopup.querySelector('.popup__photo');
 popupPhoto.src = advertisement.offer.photos[0];
 
-let popupAvatar = clonePopup.querySelector('.popup__avatar');
+const popupAvatar = clonePopup.querySelector('.popup__avatar');
 popupAvatar.src = advertisement.author.avatar;
 
 
-let mapCanvas = document.querySelector('#map-canvas');
+const mapCanvas = document.querySelector('#map-canvas');
 mapCanvas.appendChild(clonePopup);
