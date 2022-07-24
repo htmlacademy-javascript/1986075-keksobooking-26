@@ -1,5 +1,6 @@
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 import {getRandomIntInclusive} from './util.js';
+import './inactiveOnActiveStatus.js';
 
 const nameOfTheBookingObject = ['Дворец', 'Квартира', 'Дом', 'Бунгало', 'Отель'];
 const registrationTime = ['12:00', '13:00', '14:00'];
