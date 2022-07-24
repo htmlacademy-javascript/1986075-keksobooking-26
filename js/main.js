@@ -38,16 +38,15 @@ const advertisement = {
   location: location,
 };
 
-const offerTitle = document.querySelector('.popup__title');
+
 const template = document.querySelector('#card');
-const title = template.content.querySelector('.popup__title');
 const popup = template.content.querySelector('.popup');
 const clonePopup = popup.cloneNode(true);
 
 const offerAddress = clonePopup.querySelector('.popup__text--address');
 offerAddress.textContent = advertisement.offer.address;
 clonePopup.querySelector('.popup__title').textContent = advertisement.offer.title;
-// document.body.appendChild(clonePopup);
+
 
 const offerPrice = clonePopup.querySelector('.popup__text--price');
 offerPrice.textContent = `${advertisement.offer.price} ₽/ночь`;
